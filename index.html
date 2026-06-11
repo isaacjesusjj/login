@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Clínica de Psicologia Santa Casa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-card">
+      <div class="image-side">
+        <div class="overlay"></div>
+
+        <div class="image-content">
+          <div class="tag">Clínica de Psicologia</div>
+
+          <div>
+            <h1>Santa Casa<br />de São Paulo</h1>
+            <p>
+              Sistema acadêmico e clínico para organizar atendimentos,
+              supervisões, agenda, prontuários e acompanhamento dos pacientes.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <div>
+              <strong>Seguro</strong>
+              <span>Controle por perfil</span>
+            </div>
+            <div>
+              <strong>Integrado</strong>
+              <span>Equipe conectada</span>
+            </div>
+            <div>
+              <strong>Humanizado</strong>
+              <span>Foco no paciente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-side">
+        <div class="logo-area">
+          <div class="logo-icon">+</div>
+          <div>
+            <strong>FCMSCSP</strong>
+            <span>Portal Institucional</span>
+          </div>
+        </div>
+
+        <div class="title-area">
+          <span>Acesso ao sistema</span>
+          <h2>Entrar na plataforma</h2>
+          <p>Selecione seu perfil e acesse as ferramentas da clínica.</p>
+        </div>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="perfil">Perfil de acesso</label>
+            <select id="perfil" name="perfil">
+              <option value="diretor">Diretor</option>
+              <option value="supervisor">Supervisor</option>
+              <option value="psicologo" selected>Psicólogo</option>
+              <option value="estagiario">Estagiário</option>
+              <option value="recepcao">Recepção</option>
+              <option value="paciente">Paciente</option>
+              <option value="administrador">Administrador</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="email">E-mail institucional</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nome@fcmsantacasasp.edu.br"
+            />
+          </div>
+
+          <div class="input-group">
+            <div class="label-row">
+              <label for="senha">Senha</label>
+              <a href="#" id="forgotLink">Esqueci minha senha</a>
+            </div>
+
+            <div class="password-wrapper">
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+              />
+              <button type="button" id="togglePassword">Mostrar</button>
+            </div>
+          </div>
+
+          <div class="options-row">
+            <label>
+              <input type="checkbox" id="lembrar" checked />
+              Manter conectado
+            </label>
+            <small id="perfilTexto">Entrando como Psicólogo</small>
+          </div>
+
+          <p id="message" class="message"></p>
+
+          <button type="submit" class="login-button">
+            Acessar sistema
+            <span>→</span>
+          </button>
+        </form>
+
+        <footer>
+          <span>© 2026 FCMSCSP — Clínica de Psicologia</span>
+          <span>Ambiente acadêmico</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
