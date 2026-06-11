@@ -12,7 +12,6 @@ const nomesPerfis = {
   supervisor: 'Supervisor',
   psicologo: 'Psicólogo',
   estagiario: 'Estagiário',
-  recepcao: 'Recepção',
   paciente: 'Paciente',
   administrador: 'Administrador'
 };
