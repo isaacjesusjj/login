@@ -31,7 +31,7 @@ forgotLink.addEventListener('click', (event) => {
   event.preventDefault();
 
   showMessage(
-    'Solicitação de recuperação enviada. Verifique seu e-mail institucional.',
+    'Solicitação de recuperação enviada. Verifique seu e-mail .',
     'success'
   );
 });
@@ -49,7 +49,7 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
-  showMessage(`Login simulado com sucesso para o perfil: ${nomesPerfis[perfil.value]}.`, 'success');
+  showMessage(`Login com sucesso para o perfil: ${nomesPerfis[perfil.value]}.`, 'success');
 
   setTimeout(() => {
     alert(`Bem-vindo ao sistema! Perfil selecionado: ${nomesPerfis[perfil.value]}`);
